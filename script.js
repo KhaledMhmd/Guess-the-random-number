@@ -18,6 +18,7 @@ function compareNumbers() {
       score.innerHTML = `Congratulations! You guessed it after ${trials} times!`;
       document.body.style.backgroundColor = "#03fc5e";
       document.getElementById("question").innerHTML = randomNumber;
+      inputNumber.style.backgroundColor = "#03fc5e";
     } else if (value > randomNumber) {
       result.innerHTML = "That's a little bit high :( Try again!";
       x = x - 1;
