@@ -44,7 +44,6 @@ function compareNumbers() {
   }
 }
 
-console.log(x);
 againButton.addEventListener("click", resetPage);
 function resetPage() {
   document.location.reload(true);
