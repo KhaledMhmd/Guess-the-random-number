@@ -24,19 +24,23 @@ function compareNumbers() {
         x = x - 1;
         score.innerHTML = "You have " + x + " guesses left.";
       } else {
-        result.innerHTML = "You didn't guess the correct number. Try again!";
+        result.innerHTML = "You didn't guess the correct number. Press AGAIN button to try again!";
         score.innerHTML = "You have 0 guesses left.";
+        document.body.style.backgroundColor = "#ff3333";
+        inputNumber.style.backgroundColor = "#ff3333";
       }
     } else if (value < randomNumber) {
       if (x > 1) {
         result.innerHTML =
-          "You didn't guess the correct number. Press AGAIN button to try again!";
+          "That's a little bit low :( Try again!";
         x = x - 1;
         score.innerHTML = "You have " + x + " guesses left.";
       } else {
         result.innerHTML =
           "You didn't guess the correct number. Press AGAIN button to try again!";
         score.innerHTML = "You have 0 guesses left.";
+        document.body.style.backgroundColor = "#ff3333";
+        inputNumber.style.backgroundColor = "#ff3333";
       }
     }
   } else {
